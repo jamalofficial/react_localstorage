@@ -16,7 +16,6 @@ export default class ReactStore {
             localStorage.setItem( 'persistantData', btoa(JSON.stringify({})) );
         }
         localStorage.setItem('persistant', setTo);
-        console.log(typeof(localStorage.getItem('persistant')));
     }
     getPersistance = () => {
         localStorage.getItem('persistant');

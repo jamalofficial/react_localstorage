@@ -4,7 +4,6 @@ const Request =  {
         axios.defaults.baseURL = defaults.baseURL;
     },
     make(type = 'GET', apiAddress = null, params = null, body = null, headers = null){
-        console.log('defaults: ', axios.defaults);
         if (apiAddress) {
             return axios({
                 method: type,
